@@ -1,0 +1,160 @@
+#main {
+    position: absolute;
+    width: 100%;
+}
+app-footer{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    top:1031px; /* add navbar height */
+    height:730px;
+}
+
+/* ----------------------------main---------------------------- */
+.about{
+    width: 100%;
+    height: 375px;
+    /* border: 1px solid black; */
+    background-color: #f8f6f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.about>h1{
+    font-family: 'Merriweather',serif;
+    font-size: 4vw;
+    font-weight: 700;
+}
+.about-us{
+    position: relative;
+
+    width: 100%;
+    height: 656px;
+    /* border: 1px solid black; */
+}
+.about-img{
+    width: 100%;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-img>img{
+    width: 160px;
+    height: 72px;
+ 
+
+}
+.about-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:calc(100% - 60px);
+
+}
+.a-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+    position: relative;
+    left: 40px;
+    width: 40%;
+    height: 71%;
+    /* border: 1px solid black; */
+
+}
+.a-details-img{
+    right: 40px;
+    position: relative;    
+    width: 40%;
+    height: 71%;
+    /* border: 1px solid black; */
+    background-image: url(../../../../assets/images/banner-01.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+
+/* ----------------responsive---------------- */
+@media (max-width:1024px) {
+    .a-details{
+        width: 43%;
+        height:71%;
+        left: 0px;
+    }
+    .a-details-img{
+        width: 52%;
+        height: 71%;
+        right: 0;
+
+    }
+}
+@media (max-width:768px) {
+    .a-details-img{
+        width: 52%;
+        height: 44%;
+        right: 0;
+
+    }
+    .a-details>h1{
+        font-size: 4vw;
+
+    }
+    .a-details>p{
+        font-size: 2vw;
+
+    }
+}
+
+@media (max-width:426px) {
+    .about{
+        width: 100%;
+        height: 175px;
+    }
+    .about-details{
+        display: inline-block;
+    }
+    .a-details{
+        width: 100%;
+        height:57%;
+        left: 0px;
+        padding: 0px 11px 0px 11px;
+    }
+    .a-details-img{
+        width: 95%;
+        height: 40%;
+        right: 0;
+        margin: 0px 10px 0px 10px;
+
+    }
+    .about>h1{
+        font-size: 9vw;
+    }
+    .a-details>h1{
+        font-size: 6.2vw;
+
+    }
+    .a-details>p{
+        font-size: 3vw;
+
+    }
+    app-footer{
+       
+        top: 835px; /* add navbar height */
+ 
+    }
+    #main {
+     
+        height: 835px;
+    
+    
+    }
+}

@@ -1,0 +1,164 @@
+footer {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #001524;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.main {
+    position: absolute;
+    width: 80%;
+    height: 85%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    text-align: justify;
+    /* border: 1px solid rgb(255, 255, 255); */
+
+}
+
+.box>h3 {
+    color: #fff;
+    padding: 44px 0px 41px 0px;
+    font-size: 2vw;
+
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box2>a {
+    padding-bottom: 2px;
+    text-decoration: underline;
+
+    color: rgb(255, 258, 255, 0.66);
+    font-size: 1.2vw;
+
+}
+
+.app-details {
+    font-size: 1.5vw;
+}
+
+.footer-logo {
+    position: relative;
+    top: 43px;
+    width: 180px;
+    height: 80px;
+    background-image: url(../../../assets/images/organic-store-white-logo.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-description {
+    width: 84%;
+    height: calc(100% - 1230px);
+
+    position: relative;
+    top: 123px;
+    color: rgb(255, 258, 255, 0.66);
+
+}
+
+.copyright {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    top: 85%;
+    width: 80%;
+    color: rgb(255, 258, 255, 0.66);
+    border-top: 1px solid rgb(255, 255, 255);
+
+}
+
+.copyright>p {
+    font-size: 1vw;
+}
+
+.icon>i {
+    padding: 22px 11px;
+
+}
+
+/* ------------------resposnive----------- */
+
+@media (max-width:1024px) {
+    .app-details {
+        font-size: 1.5vw;
+    }
+
+    .box>h3 {
+        font-size: 2vw;
+    }
+
+    .main {
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .main {
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width:426px) {
+    .main {
+        width: 100%;
+
+    }
+
+    .footer-logo {
+        width: 87px;
+        height: 39px;
+    }
+
+    .footer-description {
+        width: 60%;
+        font-size: 2.5vw;
+        text-align: justify;
+        height: calc(100% - 87px);
+        top: 44px;
+
+    }
+
+    .box>h3 {
+        font-size: 3.6vw;
+    }
+
+    .box2>a {
+        font-size: 2.8vw;
+
+    }
+
+    .icon>i {
+        padding: 22px 9px;
+
+    }
+
+    .copyright>p {
+        font-size: 3vw;
+    }
+
+    .app-details {
+        font-size: 2.5vw;
+    }
+
+
+}

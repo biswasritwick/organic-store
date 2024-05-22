@@ -1,0 +1,14 @@
+<main>
+
+    <section class="everything-display">
+        <app-everything-sidefilter [filtertooglebarstatus]="filtertooglebarstatus"
+            [ngClass]="{'filter-side-btn':filtertooglebarstatus}"></app-everything-sidefilter>
+
+
+        <app-everything-allproduct (filtertooglebar)="filtertooglebarstatus=$event;"
+            [ngClass]="{'allProduct':filtertooglebarstatus}"></app-everything-allproduct>
+
+    </section>
+</main>
+
+<!-- <app-footer></app-footer> -->

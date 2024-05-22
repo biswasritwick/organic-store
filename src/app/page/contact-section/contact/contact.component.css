@@ -1,0 +1,262 @@
+main {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 1240px;
+    /* height: auto; */
+    /* border: 1px solid green; */
+
+}
+app-footer {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    top: 1240px;
+    /* add navbar height */
+    height: 730px;
+}
+/* ----------------------------main---------------------------- */
+.get-in-touch {
+    width: 100%;
+    height: 375px;
+    background-color: #f8f6f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+
+}
+
+.get-in-touch>h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 4.2vw;
+    font-weight: 700;
+
+}
+
+/* ---------------------contact--------------------------- */
+.contact {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 365px;
+    /* border: 1px solid rgb(215, 0, 0); */
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.contact-box {
+    display: inline-block;
+    width: 80%;
+    height: 361px;
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: 50px;
+    /* background-color: aqua; */
+    border-radius: 5px;
+    box-shadow: 0 0 50px -10px rgba(0, 0, 0, .13);
+    background-color: #ffffff;
+
+
+}
+
+.contact-box-img {
+    position: relative;
+    width: 100%;
+    /* background-color: aqua; */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    bottom: 36px;
+}
+
+.contact-box-img>img {
+    width: 10rem;
+    height: 4.5rem;
+}
+
+.contact-details {
+    /* background-color: rgb(133, 164, 164); */
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-details-box {
+    border: 0.1px solid rgba(0, 0, 0, 0.15);
+    width: 30%;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details-box>i {
+    color: #8bc34a;
+    padding-bottom: 25px;
+}
+
+/* -----------------------contact-qustion---------------------------- */
+.contact-qustion {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-qustion-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    width: 75%;
+    height: 500px;
+    /* border: 1px solid rgb(0, 0, 0); */
+
+}
+
+.coustomer-qustion {
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    position: absolute;
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.coustomer-qustion-box {
+    width: 48%;
+    height: 100%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.Question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 24%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+}
+
+.Question>a {
+    position: relative;
+    left: 50px;
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: inherit;
+
+}
+
+/* ----------------responsive---------------- */
+@media (max-width:1024px) {
+}
+@media (max-width:768px) {
+    .contact-box {
+        width: 95%;
+    }
+    .Question>a{
+        font-size: 1.5vw;
+
+    }
+}
+
+@media (max-width:426px) {
+    .get-in-touch {
+        height: 239px;
+
+
+    }
+
+    .contact {
+        height: 450px;
+    }
+
+    .contact-box {
+        width: 95%;
+        height: 500px;
+
+
+    }
+
+    .contact-details {
+        display: inline-block;
+    }
+
+    .contact-details-box {
+        /* display: inline-block; */
+        width: 90%;
+
+        height: 133px;
+        margin: 10px 0px 0px 5%;
+
+    }
+
+    .contact-box-img {
+        bottom: 20px;
+    }
+
+    .contact-box-img>img {
+        width: 7rem;
+        height: 3.5rem;
+    }
+.contact-qustion {
+    height: 540px;
+
+}
+
+    /* -----------------------contact-qustion---------------------------- */
+    .contact-qustion-box {
+        width: 90%;
+
+    }
+
+    .contact-qustion-box>h2 {
+        font-size: 5vw;
+        font-weight: 600;
+
+    }
+
+    .contact-qustion-box>img {
+        width: 4rem;
+        height: 2rem;
+
+    }
+
+    .coustomer-qustion {
+        display: inline-block;
+
+    }
+
+    .coustomer-qustion-box {
+        height: 50%;
+        width: 100%;
+    }
+    .Question>a{
+        font-size: 3.5vw;
+
+    }
+
+}
+

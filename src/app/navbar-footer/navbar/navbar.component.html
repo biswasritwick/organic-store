@@ -1,0 +1,30 @@
+<div id="main" [class.header_change]="heder_variable">
+    <!-- <div class="logo"></div> -->
+    <button class="logo" routerLink="/home"></button>
+    <div class="navoption">
+        <div class="option">
+            <ul class="capital">
+                <li>
+                    <a href="" class="fornt" routerLink="/everything">everything</a>
+                </li>
+               <li> <a href="" class="fornt" routerLink="/grossery">groceries</a></li>
+         
+               <li> <a href="" class="fornt" routerLink="/juice">juice</a></li>
+            </ul>
+        </div>
+        <div class="option">
+            <ul class="capital">
+                <li>
+                    <a href="" class="fornt" routerLink="/about">about</a>
+                </li>
+               <li> <a href="" class="fornt" routerLink="/contact">contact</a></li>
+               <li> <a href="" class="fornt">buskect</a>
+               <li> <a href="" class="fornt"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+        <button  type="button"  (click)="sidenav()" class="nav-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+    </div>
+
+</div>

@@ -1,0 +1,105 @@
+#main {
+    width: 100%;
+    height: 100%;
+    /* background-color:rgb(0, 13, 255); */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 9rem;
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
+    /* background-color: aqua; */
+
+    z-index: 2;
+    background: #fff
+}
+.headerclass{
+    width:80%;
+
+}
+
+header>h2 {
+    width: 100%;
+    height: 4rem;
+    font-size: 3vw;
+    /* border: 1px solid black; */
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+main {
+    position: absolute;
+    top: 9rem;
+    width: 100%;
+    height: calc(100% - 9rem);
+    border: 1px solid yellow;
+    padding: 0px 29px 0px 33px;
+}
+
+.filterbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 4rem);
+    top: 0;
+    /* border: 1px solid black; */
+
+}
+
+.filterbtn>button {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    width: 6rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+
+    border-radius: 5px;
+
+}
+
+.filterbtn>button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.649);
+    background-color: rgba(136, 130, 130, 0.13);
+    transition: all ease-in 0.3s;
+}
+
+#scelect {
+    position: relative;
+    top: 5px;
+    background: transparent;
+    border: none;
+    width: 9rem;
+    height: 3rem;
+    background-color: antiquewhite;
+}
+
+#scelect:hover {
+    border: 1px solid rgba(0, 0, 0, 0.53);
+    border-radius: 5px;
+
+}
+
+
+
+.product-cart {
+    display: inline-block;
+    margin: 10px 26px 10px 26px;
+    /* border: 1px solid black; */
+    width: 17rem;
+    height: 24rem; 
+}
+@media (max-width:1024px) {
+.product-cart {
+
+    width: 16rem;
+    height: 24rem; 
+
+}
+}
